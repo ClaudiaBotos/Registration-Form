@@ -1,0 +1,387 @@
+/***********GLOBAL LAYOUT***********/
+
+*{ 
+  box-sizing: border-box;
+}
+
+    
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Merriwather','Roboto Condensed', serif, sans-serif;
+background-color: ;
+}
+
+
+/*********** HEADER ***********/
+
+.header {
+background-color: #4c4c4c;
+text-align: center;
+ }
+
+.name a {
+    
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+h2 {
+    margin-top: 0;
+}
+  
+
+
+
+/******** MAIN SECTION ***********/
+
+.signup h2{
+    font-weight: bold;
+    color:#4c4c4c;
+    margin-bottom: 0;
+    text-align: center;
+    }
+.signup p {
+    text-align: center;
+    color: #cccccc;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    
+    }
+
+hr {
+    background: #4c4c4c; 
+    width: 90%;
+}
+.first { 
+     height: 3px;
+    margin-bottom:0;
+   }
+
+.second {
+    height: 1px;
+    margin-top: 2px;
+}
+
+
+
+/***Form Design***/
+
+
+
+form {
+     margin: 0 auto;
+     width: 90%;
+ 
+    
+}
+
+fieldset {
+    border: none;
+    margin-top: 20px
+}
+
+/***First Legend Design ***/
+
+legend {
+    text-align: left;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color:#4c4c4c;
+    border: none;
+    
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 14px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 20px;
+    border-radius: 5px
+
+}
+
+input:focus,
+textarea:focus {
+    outline:0;
+    border: 2px solid #2980b9;
+    background-color: #ecf0f1;
+    
+}
+
+
+
+
+
+
+
+.contact label {
+    float:left;
+    
+    
+    
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #696969;
+    cursor: pointer;
+}
+
+
+/***Placeholder Input Design***/
+
+
+input[placeholder] {
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+}
+
+input[type='number'] {
+    width: 50%;
+    float: left;
+    clear: both;
+    
+}
+
+
+/* ---- Float clearfix ---- */
+
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+
+
+/***Newsletter Design***/
+  
+
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline;
+    margin-bottom: 15px;
+}
+
+
+.legend_newsletter {
+    margin-bottom: 0;
+}
+
+.newsletter_label {
+    display: inline-block;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+
+/***Custom Checkboxes***/
+
+
+
+.newsletter input[type='checkbox'],
+ input[type='radio']{
+    display: none;
+   
+}
+
+.newsletter input[type='checkbox'] + label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    line-height: 20px;
+}
+
+.newsletter input[type='checkbox']
++ label:before {
+  content:'';
+  display:inline-block;
+  position:absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  
+}
+
+
+.newsletter input[type='checkbox']:checked +label:before {
+    content: '\2714';
+    color: #fff;
+    background-color: #3498db;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+}
+
+/***Custom Radio***/
+
+
+.newsletter input[type='radio'] + label {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    line-height: 14px;
+}
+
+.newsletter input[type='radio'] + label:before {
+  content:'';
+  display:inline-block;
+  position:absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+  
+}
+
+
+.newsletter input[type='radio']:checked + label:after {
+ content:'\25CF';
+ color: #fff;
+ display:inline-block;
+  position:absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #3498db;
+  border: 1px solid #bdc3c7;
+  line-height:13px;
+  font-size: 13px;
+  text-align: center;
+}
+
+/***Sign Up Button Design***/
+
+button {
+    font-family:'Merriwather', sans-serif;
+    width: 100%;
+    padding: 15px 30px 14px 30px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #00b9c0;
+    text-align: center;
+    font-size: 18px;
+    border: 1px ;
+    margin-bottom: 10px;
+    box-shadow: 0 -1px 0 rgba(255,255,255, 0.1) inset;
+    
+}
+
+
+
+
+
+
+
+/***Footer Design***/
+
+footer {
+    height: 100px;
+    
+}
+
+
+footer h5 {
+    text-align: center;
+    margin-top: 0;
+    font-family:'Roboto Condensed',serif;
+    font-style:italic;
+     color: #cccccc;
+    margin-bottom: 30px;
+    
+}
+
+
+
+/**********************
+   MEDIA QUERIES
+**********************/
+
+
+@media screen and (min-width: 768px) {
+   main { 
+        max-width : 600px;
+        margin: 0 auto;
+       
+    }
+    
+   
+    
+ 
+    
+    
+    .contact label {
+   display: inline-block;
+    clear: both;
+    width: 140px;
+    margin-top: 15px;
+    
+    
+   
+    
+ }
+    
+    .contact input,
+    select {
+       
+       width: 70%;
+        
+     }
+    
+    input[type='number'] {
+        width: 30%;
+        float: none;
+     }
+    
+    .third {
+        width: 100%;
+    }
+   
+    
+    
+    
+    
+    
+}
+    
+
+
+
+
+
+
+
+
+
+
+
